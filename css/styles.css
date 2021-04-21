@@ -689,16 +689,35 @@ h6 {
 }
 
 .input-label {
-  position: relative;
-  margin-top: 4px;
   display: block;
 }
 
-.input-label svg {
+.input-label + .input-label {
+  margin-top: 10px;
+}
+
+.input-label.checkbox-label {
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrap {
+  position: relative;
+  display: block;
+}
+
+.input-wrap svg {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  margin-right: 0;
 }
 
 .input-name {
@@ -709,21 +728,6 @@ h6 {
   display: block;
   margin-top: 0;
   margin-bottom: 4px;
-}
-
-.input-wrap + .input-wrap {
-  margin-top: 10px;
-}
-
-.input-wrap.checkbox-label {
-  cursor: pointer;
-  position: relative;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .button-wrap {
